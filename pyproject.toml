@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "property-scraper"
+version = "0.1.0"
+description = "Scrape property data from https://hk.centanet.com/findproperty/en/transaction-detail/-Western-Garden_21111600280049"
+authors = ["Anthony Buonomo <arb246@georgetown.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.1"
+requests = "^2.27.1"
+ipykernel = "^6.9.2"
+selenium = "^4.1.3"
+openpyxl = "^3.0.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
