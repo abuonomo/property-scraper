@@ -23,12 +23,13 @@ update-chromedriver:
 	rm chromedriver_mac64.zip; \
 
 INTERPRETER=python
-## Run medication reconciliation
-run:
-	source env_credentials; \
-	$(INTERPRETER) reconcile_tasks.py -u $${USERNAME} -p $${PASSWORD}
+## Get unit codes
+codes:
+	cd src && python lib.py
 
-
+## Get transactions for units (run iteratively until complete all)
+transactions:
+	cd src && python transactions.py
 
 #################################################################################
 # Self Documenting Commands                                                     #
