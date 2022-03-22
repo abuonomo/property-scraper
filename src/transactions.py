@@ -113,6 +113,6 @@ if __name__ == "__main__":
     while True:
         done = main()
         LOG.info("Waiting for a minute and then restarting")
-        sleep(60)
         if done:
             break
+        sleep(60)

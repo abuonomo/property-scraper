@@ -31,6 +31,10 @@ codes:
 transactions:
 	cd src && python transactions.py
 
+## Combine found data and get most important information
+condense:
+	cd src && python condense.py
+
 #################################################################################
 # Self Documenting Commands                                                     #
 #################################################################################
