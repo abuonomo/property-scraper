@@ -18,7 +18,7 @@ def main():
     dfs = []
     for f in rdir.iterdir():
         dfs.append(transactions.read_jsonl(f))
-    total_df = pd.concat(dfs)
+    total_df = pd.concat(dfs).reindex()
     col_map = {
         "estateName": "Development",
         "buildingName": "Block",

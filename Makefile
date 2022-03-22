@@ -35,6 +35,8 @@ transactions:
 condense:
 	cd src && python condense.py
 
+## Run full pipeline
+all: codes transactions condense
 #################################################################################
 # Self Documenting Commands                                                     #
 #################################################################################
